@@ -2,7 +2,7 @@ from sklearn.linear_model import LinearRegression
 
 def get_previous_winning_numbers():
     previous_winning_numbers = []
-    for i in range(2):
+    for i in range(5):
         numbers = input(f"Enter the {i+1}st set of 5 winning numbers separated by spaces: ").strip().split()
         previous_winning_numbers.append([int(num) for num in numbers])
     return previous_winning_numbers
